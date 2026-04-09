@@ -1,0 +1,62 @@
+[
+  {
+    "task": "Write a Python function that validates an AWS S3 bucket name according to AWS naming rules (3-63 characters, lowercase letters, numbers, and hyphens only, must start and end with letter or number)"
+  },
+  {
+    "task": "Write a regular expression to match valid AWS IAM role ARNs in the format arn:aws:iam::account-id:role/role-name"
+  },
+  {
+    "task": "Write a Python function that extracts the region and service name from an AWS ARN string"
+  },
+  {
+    "task": "Write a JSON object representing an AWS Lambda function configuration with environment variables, timeout, memory, and runtime"
+  },
+  {
+    "task": "Write a regular expression to validate AWS access key IDs (20 uppercase alphanumeric characters starting with AKIA)"
+  },
+  {
+    "task": "Write a Python function that converts an AWS CloudWatch log timestamp to a human-readable format"
+  },
+  {
+    "task": "Write a JSON object representing an AWS EC2 security group ingress rule allowing HTTPS traffic from a specific CIDR block"
+  },
+  {
+    "task": "Write a Python function that parses an AWS S3 URI (s3://bucket-name/key-path) and returns bucket name and key separately"
+  },
+  {
+    "task": "Write a regular expression to match AWS DynamoDB table names (valid characters: a-z, A-Z, 0-9, dashes, underscores, up to 255 characters)"
+  },
+  {
+    "task": "Write a Python function that calculates AWS pricing based on EC2 instance type and hourly usage"
+  },
+  {
+    "task": "Write a JSON object representing an AWS RDS database instance configuration with engine, storage, and backup settings"
+  },
+  {
+    "task": "Write a Python function that validates AWS VPC CIDR blocks to ensure they fall within private IP ranges"
+  },
+  {
+    "task": "Write a regular expression to extract AWS account IDs from CloudTrail log event names"
+  },
+  {
+    "task": "Write a Python function that generates an AWS S3 object key path from a timestamp and file type"
+  },
+  {
+    "task": "Write a JSON object representing an AWS SQS queue configuration with message retention and visibility timeout"
+  },
+  {
+    "task": "Write a Python function that filters AWS CloudWatch metrics by namespace and metric name"
+  },
+  {
+    "task": "Write a regular expression to match AWS Secrets Manager secret names (alphanumeric, hyphens, underscores, forward slashes)"
+  },
+  {
+    "task": "Write a Python function that converts AWS resource tags dictionary to a list of tag objects for API calls"
+  },
+  {
+    "task": "Write a JSON object representing an AWS CloudFormation template parameter with type, default value, and constraints"
+  },
+  {
+    "task": "Write a Python function that parses AWS error messages and extracts the error code and description"
+  }
+]
