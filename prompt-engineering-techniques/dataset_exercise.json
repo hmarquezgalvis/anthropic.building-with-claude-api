@@ -1,0 +1,51 @@
+[
+  {
+    "prompt_inputs": {
+      "content": "The Enlightenment's epistemological revolution fundamentally challenged medieval scholasticism by privileging empirical observation and rational inquiry over ecclesiastical authority. Thinkers such as Descartes and Locke articulated competing frameworks for understanding human knowledge\u2014rationalism versus empiricism\u2014that would reverberate through subsequent intellectual movements. This period witnessed the emergence of scientific methodology as a dominant paradigm, yet simultaneously, Romantic philosophers began questioning the sufficiency of pure reason, reasserting the importance of aesthetic experience, emotion, and the sublime. The tension between these worldviews shaped not merely academic discourse but influenced political revolutions, artistic expression, and the gradual secularization of Western thought that defined the transition from early modernity to the modern era."
+    },
+    "solution_criteria": [
+      "Identifies major philosophical concepts and intellectual movements (e.g., Enlightenment, scholasticism, rationalism, empiricism, Romanticism)",
+      "Captures implicit themes requiring semantic understanding beyond surface keywords (e.g., epistemology, scientific methodology, secularization)",
+      "Includes relevant historical periods and cultural movements mentioned or strongly implied in the passage"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a humanities passage containing implicit themes like historical periods, philosophical concepts, and cultural movements that require semantic understanding beyond keyword matching"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This study investigates the photocatalytic degradation of persistent organic pollutants using graphene-based titanium dioxide nanocomposites under visible light irradiation. We synthesized GO-TiO2 hybrid materials through a one-pot hydrothermal method and characterized them using X-ray diffraction, transmission electron microscopy, and Brunauer-Emmett-Teller surface area analysis. The photocatalytic performance was evaluated by monitoring the degradation kinetics of bisphenol A and atrazine using high-performance liquid chromatography. Our results demonstrate that the incorporation of reduced graphene oxide significantly enhances the charge separation efficiency and extends the light absorption range into the visible spectrum, achieving 94% pollutant removal within 120 minutes. Mechanistic studies employing electron paramagnetic resonance spectroscopy revealed that hydroxyl radicals and superoxide anions are the primary reactive oxygen species responsible for contaminant mineralization. The catalysts exhibited excellent stability over five consecutive cycles with minimal leaching of metal ions, suggesting potential applications in wastewater treatment systems."
+    },
+    "solution_criteria": [
+      "Extracts all major technical topics including materials, synthesis methods, characterization techniques, and applications",
+      "Captures domain-specific terminology and chemical compounds as distinct topics",
+      "Returns output as a valid JSON array of strings",
+      "Avoids extracting generic words while preserving meaningful scientific concepts"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a dense scientific abstract containing domain-specific terminology, chemical compounds, and methodological topics to verify accurate extraction of technical concepts"
+  },
+  {
+    "prompt_inputs": {
+      "content": "This study examines the intersection of artificial intelligence and healthcare delivery, specifically focusing on machine learning applications in diagnostic imaging. We investigate how convolutional neural networks (CNNs) can enhance radiological interpretation of chest X-rays, while also exploring the broader implications for clinical decision support systems. Our methodology integrates deep learning architectures with traditional statistical validation, addressing concerns about algorithmic bias in medical AI. The results demonstrate that neural network-based image analysis achieves 94% accuracy in detecting pulmonary pathologies, yet raises important questions about regulatory frameworks, physician trust, and the integration of AI tools into existing clinical workflows."
+    },
+    "solution_criteria": [
+      "Extracts topics at appropriate levels of granularity, distinguishing between broad domains (e.g., artificial intelligence, healthcare) and specific technical approaches (e.g., convolutional neural networks, radiological interpretation)",
+      "Captures overlapping topics without excessive duplication, recognizing that machine learning, deep learning, and neural networks are related but distinct concepts worth extracting",
+      "Includes both technical/methodological topics and contextual/implementation topics (regulatory frameworks, physician trust, clinical workflows)"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with a passage containing overlapping and nested topics where multiple topics could be extracted at different levels of granularity to assess prioritization and comprehensiveness"
+  },
+  {
+    "prompt_inputs": {
+      "content": "Recent empirical research demonstrates that consumer purchasing behavior is significantly influenced by the intersection of economic inequality, social identity, and psychological decision-making processes. A longitudinal study examining 5,000 households across three socioeconomic strata found that perceived social status\u2014a sociological construct\u2014directly correlates with spending patterns on luxury goods, while behavioral economists attribute this phenomenon to loss aversion and reference dependence. Furthermore, psychological research on status anxiety reveals that individuals in middle-income brackets exhibit heightened consumption of positional goods as a coping mechanism, suggesting that economic disparities generate measurable psychological distress that manifests through consumer choices. These findings challenge traditional economic models that assume rational actors and highlight the necessity of interdisciplinary frameworks integrating economic theory, sociological analysis, and cognitive psychology to understand market dynamics."
+    },
+    "solution_criteria": [
+      "Extracts topics from at least three distinct academic disciplines (economics, psychology, sociology)",
+      "Returns output as a valid JSON array of strings",
+      "Captures key thematic areas without duplicates or trivial words"
+    ],
+    "task_description": "\n    Extract topics out of a passage of text from a scholarly article into a JSON array of strings\n    ",
+    "scenario": "Testing with an interdisciplinary passage that spans multiple fields (e.g., economics, psychology, and sociology) to verify the prompt handles diverse subject matter without field-specific bias"
+  }
+]
