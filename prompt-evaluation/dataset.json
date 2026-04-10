@@ -1,14 +1,17 @@
 [
   {
-    "task": "Parse an AWS S3 bucket name from a full S3 URI like s3://my-bucket/path/to/file.txt",
-    "format": "regex"
+    "task": "Write a Python function that parses an AWS CloudFormation template in JSON format and returns a list of all resource logical IDs that have a Type of 'AWS::S3::Bucket'",
+    "format": "python",
+    "solution_criteria": "Function must correctly identify and return all S3 bucket resource logical IDs from a CloudFormation template, handling nested structures appropriately"
   },
   {
-    "task": "Create a JSON policy document that allows read-only access to a specific S3 bucket",
-    "format": "json"
+    "task": "Create a JSON object representing an AWS IAM policy that allows read-only access to all objects in an S3 bucket named 'my-data-bucket' and denies access to objects with the prefix 'private/'",
+    "format": "json",
+    "solution_criteria": "JSON must be a valid IAM policy with correct Statement structure, Actions, Resources, and Effect values that accurately represent the read-only and deny requirements"
   },
   {
-    "task": "Write a Python function that validates an AWS access key ID format",
-    "format": "python"
+    "task": "Write a regular expression that matches valid AWS S3 bucket names according to AWS naming rules (3-63 characters, lowercase letters, numbers, hyphens, no consecutive hyphens, cannot start or end with hyphen)",
+    "format": "regex",
+    "solution_criteria": "Regex must correctly validate S3 bucket names according to all AWS naming constraints and reject invalid names"
   }
 ]
